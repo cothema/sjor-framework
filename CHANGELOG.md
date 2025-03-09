@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/cothema/sjor-framework/compare/v0.3.1...v0.3.2) (2025-03-09)
+
+
+### Bug Fixes
+
+* Recommendations component is exported in separated client.ts entry point because it requires client render. ([3dd82c5](https://github.com/cothema/sjor-framework/commit/3dd82c5fdbc8543ca1c3e442e367d37ee17ac557))
+
 ### [0.3.1](https://github.com/cothema/sjor-framework/compare/v0.3.0...v0.3.1) (2025-03-09)
 
 
