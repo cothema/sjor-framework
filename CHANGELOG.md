@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/cothema/sjor-framework/compare/v0.3.0...v0.3.1) (2025-03-09)
+
+
+### Features
+
+* Created Recommendations component ([219bc95](https://github.com/cothema/sjor-framework/commit/219bc95669dedfa08ca4155f3fdc27a1731d2f50))
+
 ## [0.3.0](https://github.com/cothema/sjor-framework/compare/v0.2.0...v0.3.0) (2025-03-09)
 
 ## [0.2.0](https://github.com/cothema/sjor-framework/compare/v0.1.0...v0.2.0) (2025-03-09)
