@@ -12,5 +12,13 @@ export default defineConfig({
   sourcemap: true,
   minify: false,
   target: "esnext",
-  exclude: ["src/**/*.stories.*"]
+  exclude: ["src/**/*.stories.*"],
+  external: [
+    "react",
+    "react-dom",
+    "react/jsx-runtime",
+    "next",
+    "next/image",
+    "swiper"
+  ]
 });

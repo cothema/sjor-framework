@@ -1,10 +1,11 @@
-import {readdirSync, statSync, writeFileSync} from "fs";
+import {readdirSync, readFileSync, statSync, writeFileSync} from "fs";
 import {join, relative} from "path";
 
 const basePath = "./src/components";
 const componentDirs = ["molecules"];
 
-let exports = "// Auto-generated component exports\n\n";
+let serverExports = "// Auto-generated server component exports\n\n";
+let clientExports = "// Auto-generated client component exports\n\n";
 
 // Recursive function to get all files inside subdirectories
 const getFilesRecursively = (dir) => {
@@ -26,7 +27,7 @@ const getFilesRecursively = (dir) => {
     return results;
 };
 
-// Iterate through atoms and molecules directories
+// Iterate through directories and categorize components
 componentDirs.forEach((dir) => {
     const dirPath = join(basePath, dir);
 
@@ -40,16 +41,26 @@ componentDirs.forEach((dir) => {
                 .replace(".ts", "");
 
             const componentName = relativePath.split("/").pop();
-            exports += `export { ${componentName} } from "./components/${relativePath}";\n`;
+            const fileContent = readFileSync(file, "utf-8");
+
+            // Check if file starts with "use client" (ignoring whitespace)
+            if (/^\s*("use client"|'use client')/.test(fileContent)) {
+                clientExports += `export { ${componentName} } from "./components/${relativePath}";\n`;
+            } else {
+                serverExports += `export { ${componentName} } from "./components/${relativePath}";\n`;
+            }
         });
     } catch (err) {
         console.warn(`⚠️  Warning: Directory "${dirPath}" does not exist. Skipping.`);
     }
 });
 
-exports += "\n// Export CSS styles\n" +
-    "import \"./styles/global.css\";\n";
+const stylesImport = "\n// Import CSS styles\n" + "import \"./styles/global.css\";\n";
 
-writeFileSync("src/index.ts", exports);
+serverExports += stylesImport;
+clientExports += stylesImport;
 
-console.log("✅  index.ts updated successfully!");
+writeFileSync("src/ssr.ts", serverExports);
+writeFileSync("src/client.ts", clientExports);
+
+console.log("✅  ssr.ts and client.ts updated successfully!");

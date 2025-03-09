@@ -2,9 +2,21 @@
   "name": "@cothema/sjor-framework",
   "version": "0.3.1",
   "description": "Simple framework built with Next.js and Tailwind CSS, designed for fast creation of landing pages.",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/ssr.js",
+  "module": "dist/ssr.mjs",
+  "types": "dist/ssr.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ssr.mjs",
+      "require": "./dist/ssr.js",
+      "types": "./dist/ssr.d.ts"
+    },
+    "./client": {
+      "import": "./dist/client.mjs",
+      "require": "./dist/client.js",
+      "types": "./dist/client.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -14,14 +26,14 @@
     "url": "https://github.com/cothema/sjor-framework.git"
   },
   "peerDependencies": {
-    "@cothema/drakkar-ui": ">=0.2.0",
+    "@cothema/drakkar-ui": "^0.5.1",
     "@fortawesome/fontawesome-svg-core": ">=6.7.2",
     "@fortawesome/free-brands-svg-icons": ">=6.7.2",
     "@fortawesome/free-solid-svg-icons": ">=6.7.2",
     "@fortawesome/react-fontawesome": ">=0.2.2",
     "next": ">=15.1.4",
-    "react": ">=18.0.0",
-    "react-dom": ">=18.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "swiper": "^11.2.5",
     "tailwindcss": ">=3.0.0"
   },
