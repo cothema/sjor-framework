@@ -1,4 +1,4 @@
-import React from "react";
+import React, {FC} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookSquare, faInstagram, faLinkedin, faSpotify, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {faUserGroup} from "@fortawesome/free-solid-svg-icons";
@@ -25,7 +25,7 @@ interface SocialIconProps {
   url: string;
 }
 
-const SocialIcon: React.FC<SocialIconProps> = ({platform, url}) => {
+const SocialIcon: FC<SocialIconProps> = ({platform, url}) => {
   if (!socialPlatforms[platform]) return null;
 
   const {name, icon, color} = socialPlatforms[platform];
@@ -47,7 +47,7 @@ interface SocialIconsProps {
   socials: SocialLink[];
 }
 
-export const SocialIcons: React.FC<SocialIconsProps> = ({socials}) => {
+export const SocialIcons: FC<SocialIconsProps> = ({socials}) => {
   return (
     <>
       {socials.map((social, index) => (
