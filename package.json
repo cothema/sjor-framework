@@ -36,16 +36,18 @@
     "autoprefixer": "^10.4.20",
     "playwright": "^1.50.1",
     "postcss": "^8.5.3",
+    "standard-version": "^9.5.0",
     "storybook": "^8.6.4",
     "tailwindcss": "^3.4.17",
-    "tsup": "^6.0.0",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.2"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "tsup",
+    "build-storybook": "storybook build",
+    "dev": "tsup --watch",
     "prepare": "npm run build",
-    "publish": "npm publish --access public",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "release": "node generate-index.mjs && standard-version && git push --follow-tags && npm publish --access public",
+    "storybook": "storybook dev -p 6006"
   }
 }

@@ -25,7 +25,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 # IDE
-/.idea
 .vscode/
 *.swp
 *.swo
@@ -35,7 +34,6 @@ yarn-error.log*
 .storybook/build/
 .storybook/.cache/
 *.storybook.log
-src/stories/generated/
 
 # Tailwind build artifacts
 *.css.map

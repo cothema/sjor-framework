@@ -1,5 +1,6 @@
-// Export Molecules
-export {ComgateLogosLine} from "./stories/molecules/Payments/ComgateLogosLine/ComgateLogosLine";
+// Auto-generated component exports
 
-// Export Tailwind CSS styles
+export { ComgateLogosLine } from "./components/molecules/Payments/ComgateLogosLine/ComgateLogosLine";
+
+// Export CSS styles
 import "./styles/global.css";
