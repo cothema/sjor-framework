@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/cothema/sjor-framework/compare/v0.3.2...v0.3.3) (2025-03-09)
+
+
+### Bug Fixes
+
+* Added css file to client entry point ([50979c5](https://github.com/cothema/sjor-framework/commit/50979c56209dc43b18b32929086a9dbab58283b8))
+
 ### [0.3.2](https://github.com/cothema/sjor-framework/compare/v0.3.1...v0.3.2) (2025-03-09)
 
 
