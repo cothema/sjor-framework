@@ -1,12 +1,7 @@
 import React, {FC} from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-export type Partner = {
-  title: string;
-  href: string;
-  imageSrc: string;
-};
+import {Partner} from "../../../../types/Partners";
 
 type PartnersProps = {
   partners: Partner[];

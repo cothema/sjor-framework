@@ -6,14 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
-import React, {FC, ReactNode} from "react";
-
-export type Recommendation = {
-  text: string | ReactNode;
-  name: string;
-  role: string;
-  image: string;
-};
+import React, {FC} from "react";
+import {Recommendation} from "../../../../types/Recommendations";
 
 type RecommendationsSwiperProps = {
   recommendations: Recommendation[];

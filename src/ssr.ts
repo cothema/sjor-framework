@@ -1,8 +1,11 @@
 // Auto-generated server component exports
 
-export { PartnersList } from "./components/molecules/Partners/PartnersList/PartnersList";
-export { ComgateLogosLine } from "./components/molecules/Payments/ComgateLogosLine/ComgateLogosLine";
-export { SocialIcons } from "./components/molecules/Socials/SocialIcons/SocialIcons";
+export * from "./components/molecules/Partners/PartnersList/PartnersList";
+export * from "./components/molecules/Payments/ComgateLogosLine/ComgateLogosLine";
+export * from "./components/molecules/Socials/SocialIcons/SocialIcons";
+export * from "./types/Partners";
+export * from "./types/Recommendations";
+export * from "./types/Socials";
 
 // Import CSS styles
 import "./styles/global.css";

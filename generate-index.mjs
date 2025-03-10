@@ -1,8 +1,8 @@
 import {readdirSync, readFileSync, statSync, writeFileSync} from "fs";
 import {join, relative} from "path";
 
-const basePath = "./src/components";
-const componentDirs = ["molecules"];
+const basePath = "./src";
+const componentDirs = ["components/molecules", "types"];
 
 let serverExports = "// Auto-generated server component exports\n\n";
 let clientExports = "// Auto-generated client component exports\n\n";
@@ -45,9 +45,9 @@ componentDirs.forEach((dir) => {
 
             // Check if file starts with "use client" (ignoring whitespace)
             if (/^\s*("use client"|'use client')/.test(fileContent)) {
-                clientExports += `export { ${componentName} } from "./components/${relativePath}";\n`;
+                clientExports += `export * from "./${relativePath}";\n`;
             } else {
-                serverExports += `export { ${componentName} } from "./components/${relativePath}";\n`;
+                serverExports += `export * from "./${relativePath}";\n`;
             }
         });
     } catch (err) {
