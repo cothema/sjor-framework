@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.7](https://github.com/cothema/sjor-framework/compare/v0.3.6...v0.3.7) (2025-03-12)
+
+
+### Bug Fixes
+
+* Corrected props type definition for Google Analytics ([c7df436](https://github.com/cothema/sjor-framework/commit/c7df436e00bb34a2951474162d4f5d74a9b32d4c))
+
 ### [0.3.6](https://github.com/cothema/sjor-framework/compare/v0.3.5...v0.3.6) (2025-03-12)
 
 
