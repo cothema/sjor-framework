@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.11](https://github.com/cothema/sjor-framework/compare/v0.3.10...v0.3.11) (2025-03-12)
+
+
+### Bug Fixes
+
+* TypeError: createContext is not a function ([509dd30](https://github.com/cothema/sjor-framework/commit/509dd3025d688b25192ebd8186181b20f1f4ff53))
+
 ### [0.3.10](https://github.com/cothema/sjor-framework/compare/v0.3.9...v0.3.10) (2025-03-12)
 
 
