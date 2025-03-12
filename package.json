@@ -60,7 +60,7 @@
     "build-storybook": "storybook build",
     "dev": "tsup --watch",
     "prepare": "npm run build",
-    "release": "node generate-index.mjs && git diff --quiet || (echo '❌ Uncommitted changes detected. Please commit before release.' && exit 1) && standard-version && git push --follow-tags && npm publish --access public",
+    "release": "node generate-index.mjs && git diff --quiet || (echo '❌ Uncommitted changes detected. Please commit before release.' && exit 1) && npm run build && standard-version && git push --follow-tags && npm publish --access public",
     "storybook": "storybook dev -p 6006"
   }
 }
