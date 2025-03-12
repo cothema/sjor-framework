@@ -1,6 +1,6 @@
 {
   "name": "@cothema/sjor-framework",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "Simple framework built with Next.js and Tailwind CSS, designed for fast creation of landing pages.",
   "main": "dist/ssr.js",
   "module": "dist/ssr.mjs",

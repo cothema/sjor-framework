@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.13](https://github.com/cothema/sjor-framework/compare/v0.3.12...v0.3.13) (2025-03-12)
+
+
+### Bug Fixes
+
+* Issue with importing aos css ([a1f3571](https://github.com/cothema/sjor-framework/commit/a1f3571c7e65421e4ecf9f847d04631224337792))
+
 ### [0.3.12](https://github.com/cothema/sjor-framework/compare/v0.3.11...v0.3.12) (2025-03-12)
 
 
