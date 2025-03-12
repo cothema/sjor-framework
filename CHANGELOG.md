@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.8](https://github.com/cothema/sjor-framework/compare/v0.3.7...v0.3.8) (2025-03-12)
+
+
+### Features
+
+* Created CookiesConsentDialog component ([b7042b3](https://github.com/cothema/sjor-framework/commit/b7042b3c10ce8f96f0ff226e7409aa38d6b16898))
+
 ### [0.3.7](https://github.com/cothema/sjor-framework/compare/v0.3.6...v0.3.7) (2025-03-12)
 
 
