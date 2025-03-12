@@ -1,6 +1,7 @@
 import Script from "next/script";
+import React from "react";
 
-export default function GoogleAnalytics () {
+export const GoogleAnalytics: React.FC = () => {
   const analyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
 
   if (analyticsId === undefined) {

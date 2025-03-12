@@ -1,8 +1,9 @@
 "use client"
 
 import Script from "next/script";
+import React from "react";
 
-export default function GoogleAnalyticsConsent({cookiesConsent}: { cookiesConsent: boolean }) {
+export const GoogleAnalyticsConsent: React.FC = ({cookiesConsent}: { cookiesConsent: boolean }) => {
   if (!cookiesConsent) {
     return null;
   }
