@@ -2,7 +2,7 @@ import {readdirSync, readFileSync, statSync, writeFileSync} from "fs";
 import {join, relative} from "path";
 
 const basePath = "./src";
-const componentDirs = ["components/molecules", "types"];
+const componentDirs = ["components/molecules", "components/scripts", "types"];
 
 let serverExports = "// Auto-generated server component exports\n\n";
 let clientExports = "// Auto-generated client component exports\n\n";
