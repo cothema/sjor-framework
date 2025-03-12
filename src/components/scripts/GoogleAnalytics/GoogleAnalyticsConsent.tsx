@@ -8,7 +8,9 @@ interface GoogleAnalyticsConsentProps {
 }
 
 export const GoogleAnalyticsConsent: React.FC<GoogleAnalyticsConsentProps> = ({cookiesConsent}) => {
-  if (!cookiesConsent) {
+  const analyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
+
+  if (!cookiesConsent || !analyticsId) {
     return null;
   }
 
