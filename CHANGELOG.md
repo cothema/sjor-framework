@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.9](https://github.com/cothema/sjor-framework/compare/v0.3.8...v0.3.9) (2025-03-12)
+
+
+### Features
+
+* Created AOSInit script ([cf46930](https://github.com/cothema/sjor-framework/commit/cf469308207a5c4e4ddaffa0bfa75fa092be2e79))
+
+
+### Bug Fixes
+
+* Do not try to setup gtag if not exists ([fe708ae](https://github.com/cothema/sjor-framework/commit/fe708ae35d91a55131eb039b80210e93a67820e9))
+
 ### [0.3.8](https://github.com/cothema/sjor-framework/compare/v0.3.7...v0.3.8) (2025-03-12)
 
 
