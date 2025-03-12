@@ -1,5 +1,6 @@
 // Auto-generated client component exports
 
+export * from "./components/molecules/Legal/CookiesConsentDialog/CookiesConsentDialog";
 export * from "./components/molecules/Recommendations/RecommendationsSwiper/RecommendationsSwiper";
 export * from "./components/scripts/GoogleAnalytics/GoogleAnalyticsConsent";
 
