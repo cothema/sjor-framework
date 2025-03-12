@@ -3,7 +3,11 @@
 import Script from "next/script";
 import React from "react";
 
-export const GoogleAnalyticsConsent: React.FC = ({cookiesConsent}: { cookiesConsent: boolean }) => {
+interface GoogleAnalyticsConsentProps {
+  cookiesConsent: boolean;
+}
+
+export const GoogleAnalyticsConsent: React.FC<GoogleAnalyticsConsentProps> = ({cookiesConsent}) => {
   if (!cookiesConsent) {
     return null;
   }
