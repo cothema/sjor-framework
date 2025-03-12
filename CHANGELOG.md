@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.12](https://github.com/cothema/sjor-framework/compare/v0.3.11...v0.3.12) (2025-03-12)
+
+
+### Features
+
+* Implemented ClarityHeatmaps script ([289892c](https://github.com/cothema/sjor-framework/commit/289892c4e026637a3ccb71af70c440446407235a))
+
+
+### Bug Fixes
+
+* TypeError: createContext is not a function ([1374aa2](https://github.com/cothema/sjor-framework/commit/1374aa266333c5e36ca4b96f3c38a1830ee7319a))
+
 ### [0.3.11](https://github.com/cothema/sjor-framework/compare/v0.3.10...v0.3.11) (2025-03-12)
 
 
