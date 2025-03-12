@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.6](https://github.com/cothema/sjor-framework/compare/v0.3.5...v0.3.6) (2025-03-12)
+
+
+### Bug Fixes
+
+* export const instead of function for Google Analytics components ([f83a8ed](https://github.com/cothema/sjor-framework/commit/f83a8eda83f810614495822967ab8a521a76ca4a))
+
 ### [0.3.5](https://github.com/cothema/sjor-framework/compare/v0.3.4...v0.3.5) (2025-03-12)
 
 
