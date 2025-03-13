@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.14](https://github.com/cothema/sjor-framework/compare/v0.3.13...v0.3.14) (2025-03-13)
+
+
+### Features
+
+* Created FacebookPixel script component ([d7cf3e4](https://github.com/cothema/sjor-framework/commit/d7cf3e406a22be38f4d45d32b0f1a8cc6e4d83f2))
+
 ### [0.3.13](https://github.com/cothema/sjor-framework/compare/v0.3.12...v0.3.13) (2025-03-12)
 
 
